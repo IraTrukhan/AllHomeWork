@@ -18,4 +18,7 @@ let usersList = [
    let filterArray = checkAdults(usersList);
    alert(filterArray.length);
    console.log(filterArray);
+   filterArray.forEach(element => {
+     alert(`${element.name} - ${element.age} years`);
+   });
  
