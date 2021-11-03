@@ -1,10 +1,11 @@
 // Given an array of strings, 
 // return that array but add a ‘!’ symbol at the end of each string.
 
-function addExclamationPoint(arrayStrings){
-    return arrayStrings.map(item => item += '!');
+function addSymbolToArray(arrayStrings, symbol){
+    return arrayStrings.map(item => item += symbol);
 }
 
 let arr = ['Яблуко', 'Банан', 'Груша'];
-addExclamationPoint(arr).forEach(alert);
+let symbol = prompt('Symbol:', '!');
+addSymbolToArray(arr,symbol).forEach(alert);
 
