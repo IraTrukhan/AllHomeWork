@@ -1,26 +1,10 @@
+// create an instance method named howMany() in class Song
 class Song{
     _listeners = [];
     constructor (title, artist){
         this.title = title;
         this.artist = artist;
-    }        
-
-    // get title(){
-    //     return this._title;
-    // }
-
-    // get artist(){
-    //     return this._artist;
-    // }
-
-    // set title(newTitle){
-    //     this.title = newTitle;
-    // }
-
-    // set artist(newArtist){
-    //     this.artist = newArtist;
-    // }
-
+    }       
     howMany(...peoples){
         let newListeners = [];
         let peopleLower;
