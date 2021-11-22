@@ -8,13 +8,13 @@ class Song{
     howMany(...peoples){
         let newListeners = [];
         let peopleLower;
-        for (let people of peoples) {
-            peopleLower = people.toLowerCase();
+        peoples.forEach((item) => {
+            peopleLower = item.toLowerCase();
             if (!this._listeners.includes(peopleLower)){
                 newListeners.push(peopleLower);
                 this._listeners.push(peopleLower);
             }
-        }
+        })
         return newListeners.length;
     }
 }
