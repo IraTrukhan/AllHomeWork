@@ -1,16 +1,16 @@
-function sortAsc(){
-    return function ask(a, b) {
+function sortAsc(a, b){
+    return function(a, b) {
         return a - b;
     }
 }
 function sortDesc(){
-    return function ask(a, b) {
+    return function(a, b) {
         return b - a;
     }
 }
-Array.prototype.sortReloaded = function (dir) {
+Array.prototype.sortReloaded = function (dir = 'asc') {
     let returnArray = [...this];
-    if (dir === undefined || dir.toLowerCase() === 'asc'){
+    if (dir.toLowerCase() === 'asc'){
         return returnArray.sort(sortAsc())
     }
     else if (dir.toLowerCase() === 'desc'){
