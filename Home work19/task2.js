@@ -1,12 +1,9 @@
 function makeClass(...args){
-    let count = 0;
     return class newClass {        
         constructor(...parameters){
-            for(let arg of args){
-                this[arg] = parameters[count];
-                count ++;
-            }
-        count = 0;
+            args.forEach((item, index) => {
+                this[item] = parameters[index];
+            })
         }
     }
 }
