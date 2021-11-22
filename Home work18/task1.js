@@ -8,7 +8,7 @@ class Song{
     howMany(...peoples){
         let newListeners = [];
         let peopleLower;
-        peoples.forEach((item) => {
+        peoples.forEach(item => {
             peopleLower = item.toLowerCase();
             if (!this._listeners.includes(peopleLower)){
                 newListeners.push(peopleLower);
